@@ -37,13 +37,13 @@ var app = {
         
         var display = document.getElementById('pouchdb-display');
         
-        var db = new PouchDB('pouch');
-        var idb = new PouchDB('idbpouch', {adapter: 'idb'});
-        var websql = new PouchDB('websqlpouch', {adapter: 'websql'});
+        var db = new PouchDB('pouch');                                // <--- this one uses any available adapter
+        var idb = new PouchDB('idbpouch', {adapter: 'idb'});          // <--- this one uses IndexedDB
+        var websql = new PouchDB('websqlpouch', {adapter: 'websql'}); // <--- this one uses the SQLite plugin
         
         display.innerHTML += (db.adapter ? '&#10003; PouchDB is working.<br/>' : '&#10007; PouchDB is not working.<br/>');
+        display.innerHTML += (websql.adapter ? '&#10003; SQLite plugin is supported.<br/>' : '&#10007; SQLite plugin is not supported.<br/>');
         display.innerHTML += (idb.adapter ? '&#10003; IndexedDB is supported.<br/>' : '&#10007; IndexedDB is not supported.<br/>');
-        display.innerHTML += (websql.adapter ? '&#10003; WebSQL is supported.<br/>' : '&#10007; WebSQL is not supported.<br/>');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

@@ -1,10 +1,13 @@
-Cordova PouchDB hello world app
+Cordova PouchDB hello world app, with SQLite Plugin
 =====
 
 This is a basic Cordova app. It was created using the `cordova` CLI, by running:
 
     cordova create pouchdb-hello-world
 
+Then I installed the [SQLite Plugin](https://github.com/brodysoft/Cordova-SQLitePlugin) by running:
+
+    cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin
 
 To run the app yourself on a variety of platforms, just check out the code and follow the instructions below.
 
