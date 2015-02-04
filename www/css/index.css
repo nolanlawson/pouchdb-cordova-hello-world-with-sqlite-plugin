@@ -113,3 +113,9 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+#pouchdb-display {
+  margin-top: 20px;
+  text-align: left;
+  text-transform: none;
+}

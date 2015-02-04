@@ -34,6 +34,16 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        
+        var display = document.getElementById('pouchdb-display');
+        
+        var db = new PouchDB('pouch');
+        var idb = new PouchDB('idbpouch', {adapter: 'idb'});
+        var websql = new PouchDB('websqlpouch', {adapter: 'websql'});
+        
+        display.innerHTML += (db.adapter ? '&#10003; PouchDB is working.<br/>' : '&#10007; PouchDB is not working.<br/>');
+        display.innerHTML += (idb.adapter ? '&#10003; IndexedDB is supported.<br/>' : '&#10007; IndexedDB is not supported.<br/>');
+        display.innerHTML += (websql.adapter ? '&#10003; WebSQL is supported.<br/>' : '&#10007; WebSQL is not supported.<br/>');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
