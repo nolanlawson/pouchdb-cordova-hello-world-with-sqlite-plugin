@@ -43,3 +43,7 @@ What you'll see:
 ### Other platforms
 
 Feel free to try it out and take screenshots. :)
+
+## Caveats
+
+This is using a prerelease version of PouchDB 3.4.0 due to [this bug](https://github.com/pouchdb/pouchdb/issues/3505). After 3.4.0, you'll be able to use PouchDB normally.
