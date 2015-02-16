@@ -1,4 +1,4 @@
-Cordova PouchDB hello world app, with SQLite Plugin
+GCordova PouchDB hello world app, with SQLite Plugin
 =====
 
 This is a basic Cordova app. It was created using the `cordova` CLI, by running:
@@ -43,7 +43,3 @@ What you'll see:
 ### Other platforms
 
 Feel free to try it out and take screenshots. :)
-
-## Caveats
-
-This is using a prerelease version of PouchDB 3.4.0 due to [this bug](https://github.com/pouchdb/pouchdb/issues/3505). After 3.4.0, you'll be able to use PouchDB normally.
