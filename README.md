@@ -1,4 +1,4 @@
-GCordova PouchDB hello world app, with SQLite Plugin
+Cordova PouchDB hello world app, with SQLite Plugin
 =====
 
 This is a basic Cordova app. It was created using the `cordova` CLI, by running:
