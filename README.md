@@ -40,6 +40,15 @@ What you'll see:
 
 <a href="./screenshots/firefoxos.png"><img src="./screenshots/firefoxos.png" height=500/></a>
 
+### Windows
+
+	cordova platform add windows
+	cordova run windows -- --phone
+
+What you'll see:
+
+<a href="./screenshots/windows.png"><img src="./screenshots/windows.png" height=500/></a>
+
 ### Other platforms
 
 Feel free to try it out and take screenshots. :)
